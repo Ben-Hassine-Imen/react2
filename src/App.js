@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import  paysage  from "./paysage.jpg";
+import ReactPlayer from "react-player";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{border:"solide 1px black",maxWidth:"100vw"}}>
+      <h1 className="title red">Ben Hassine Imèn</h1>
+    <br/>
+  <div className="imgages">
+    <img className="img" src={paysage} alt='paysage'></img>
+    <br/>
+    <img className="img" src="/nature.jpg"></img>
+   </div>
+    <br/>
+    <br/>
+
+
+ <ReactPlayer className='video' url="https://youtu.be/0tIUbGVEKIk?t=7"/>
+
+
+
+
+
     </div>
   );
 }
